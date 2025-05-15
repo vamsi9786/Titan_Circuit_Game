@@ -1,0 +1,226 @@
+h2 {
+    position:absolute;
+    left:50%;
+    top: 1%;
+    transform: translate(-50%, -50%);  
+}
+
+#outhex{
+    position:absolute;
+    width:600px;
+    height:auto;
+    background-color: transparent;
+}
+
+#midhex{
+    position:absolute;
+    width:420px;
+    height:auto;
+    background-color: transparent;
+}
+
+#inhex{
+    position:absolute;
+    width:260px;
+    height:auto;
+    background-color: transparent;
+}
+
+#points{
+    font-weight: bold;
+    opacity: 85%;
+    position:absolute;
+    right:10%;
+    bottom: 10%;
+}
+
+#timer{
+    font-weight: bold;
+    opacity: 85%;
+    position:absolute;
+    right:10%;
+    top: 5%;
+}
+
+#pause{
+    position:absolute;
+    left:10%;
+    top: 10%;
+    width: 90px;
+    display: flex;
+    align-content:space-between;
+}
+
+#resume1{
+    position:relative;
+    left:5px;
+}
+#reset2{
+    position:relative;
+    left:10px;
+}
+
+svg {
+    height: 600px;
+    width: 600px;
+    background-color: #4b4b4b;
+    display: inline-flex;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);    
+}
+
+#connline1{
+        transform:scale(1.22);
+        transform-origin: 50px 300px ;
+}
+#connline2{
+        transform:scale(1.22);
+        transform-origin: 425px 83.5px ;
+}
+#connline3{
+    transform:scale(1.22);
+    transform-origin: 425px 516.5px ;
+}
+#connline4{
+    transform:scale(1.3);
+    transform-origin: 550px 300px ;
+}
+    
+#connline5{
+    transform:scale(1.3);
+    transform-origin: 175px 83.5px ;
+}
+#connline6{
+    transform:scale(1.3);
+    transform-origin: 175px 516.5px ;
+}
+
+
+@media (max-width: 600px)  {
+    svg {
+        height: 300px;
+        width: 300px;
+    }
+    h2 {
+        font-size: 0.9em;
+    }
+    #points {
+        font-size: 0.75em;
+        right: 9%;
+        bottom: 10%;
+    }
+    #timer{
+        font-size: 0.75em;
+        font-weight: bold;
+        opacity: 85%;
+        position:absolute;
+        right:6%;
+        top: 5%;
+    }
+    #pause{
+        position:absolute;
+        left:6%;
+        top: 8%;
+        width: 120px;
+        height: auto;
+    }
+    #outhex{
+        width:300px;
+        height:auto;
+    }
+    #midhex{
+        width:200px;
+        height:auto;
+    }
+    #inhex{
+        width:100px;
+        height:auto;
+    }
+    #connline1{
+        transform:scale(1.3);
+        transform-origin: 50px 300px ;
+    }
+    #connline2{
+        transform:scale(1.4);
+        transform-origin: 425px 83.5px ;
+    }
+    #connline3{
+        transform:scale(1.4);
+        transform-origin: 425px 516.5px ;
+    }
+    #connline4{
+        transform:scale(1.6);
+        transform-origin: 550px 300px ;
+    }
+        
+    #connline5{
+        transform:scale(1.6);
+        transform-origin: 175px 83.5px ;
+    }
+    #connline6{
+        transform:scale(1.6);
+        transform-origin: 175px 516.5px ;
+    }
+}
+
+@media (max-height: 600px)  {
+    svg {
+        height: 400px;
+        width: 400px;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    #points {
+        font-size: 1em;
+        right: 10%;
+        bottom: 10%;
+    }
+    #timer{
+        font-size: 1em;
+        font-weight: bold;
+        opacity: 85%;
+        position:absolute;
+        right:9%;
+        top: 5%;
+    }
+    #outhex{
+        width:400px;
+        height:auto;
+    }
+    #midhex{
+        width:275px;
+        height:auto;
+    }
+    #inhex{
+        width:150px;
+        height:auto;
+    }
+    #connline1{
+        transform:scale(1.3);
+        transform-origin: 50px 300px ;
+    }
+    #connline2{
+        transform:scale(1.4);
+        transform-origin: 425px 83.5px ;
+    }
+    #connline3{
+        transform:scale(1.4);
+        transform-origin: 425px 516.5px ;
+    }
+    #connline4{
+        transform:scale(1.5);
+        transform-origin: 550px 300px ;
+    }
+        
+    #connline5{
+        transform:scale(1.5);
+        transform-origin: 175px 83.5px ;
+    }
+    #connline6{
+        transform:scale(1.5);
+        transform-origin: 175px 516.5px ;
+    }
+}
