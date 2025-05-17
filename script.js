@@ -33,13 +33,13 @@ resetbtn.addEventListener('click',() =>{
 pausebtn.addEventListener('click',() =>{
     pausebtnres = true;
     svgres.setAttribute('z-index','4');
-    svgres.setAttribute('background-color','black');
+    
 });
 
 resumebtn.addEventListener('click',() =>{
     pausebtnres = false;
     svgres.setAttribute('z-index','0');
-    svgres.setAttribute('background-color','#4b4b4b');
+    
 });
 
 
@@ -248,11 +248,15 @@ function startovralltimer(){
 }
 
 
-starttrntimer();
-startovralltimer();
+
 
 
 let j=1;
+
+
+
+starttrntimer();
+startovralltimer();
 
 allnodes.forEach((choice) => {
     choice.addEventListener('click', function (e) {
@@ -261,19 +265,20 @@ allnodes.forEach((choice) => {
         //placement phase 1 outer hex
         if (j<9 && !pausebtnres){
             
-            if (outhex.includes(curridx) ) {
-                if (this.getAttribute('fill') !== 'red' && this.getAttribute('fill') !== 'blue' && currplyrname=='Red') {
+            if (outhex.includes(curridx)) {
+                
+                if (this.getAttribute('fill') ==='#4b4b4b' && j%2 !=0 ) {
                     this.setAttribute('fill','red');
-                    outhexplcd.push(curridx); // if getAttribute is red reset turntimer
+                    outhexplcd.push(curridx); 
                     plcdtitans.push(curridx);
                     j++;
                     currplyrname="Blue";
                     currentPlayer.innerHTML=currplyrname;
                     starttrntimer();
                 }
-                else if(this.getAttribute('fill') !== 'red' && this.getAttribute('fill') !== 'blue' && currplyrname=='Blue'){
+                else if(this.getAttribute('fill') === '#4b4b4b' && j%2 ==0){
                     this.setAttribute('fill','blue');
-                    outhexplcd.push(curridx);     // if getAttribute is blue reset turntimer
+                    outhexplcd.push(curridx);     
                     plcdtitans.push(curridx);
                     j++;
                     currplyrname="Red";
@@ -283,6 +288,7 @@ allnodes.forEach((choice) => {
                 else if (outhexplcd.includes(curridx)) {
                     alert('Already selected');
                 }
+
             } 
 
             
@@ -458,6 +464,7 @@ allnodes.forEach((choice) => {
         }
     });
 });
+
 
 
 
